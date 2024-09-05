@@ -1,17 +1,39 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+root.render(
+  <div className="frame">
+    <div className="center">
+      <div className="profile">
+        <div className="img">
+          <div className="circle-1"></div>
+          <div className="circle-2"></div>
+          <img src="https://assets.codepen.io/6538307/internal/avatars/users/default.png" alt="" className="profile-img" />
+        </div>
+        <div className="name">Ranit Saha</div>
+        <div className="job">Full-Stack Developer</div>
+        <div className="action">
+          <button className="btn">Message</button>
+          <button className="btn">Follow</button>
+        </div>
+      </div>
+      <div className="stats">
+        <div className="blocks">
+          <p className="num">523</p>
+          <p className="blockName">Posts</p>
+        </div>
+        <div className="blocks">
+          <p className="num">1387</p>
+          <p className="blockName">Likes</p>
+        </div>
+        <div className="blocks">
+          <p className="num">146</p>
+          <p className="blockName">Followers</p>
+        </div>
+      </div>
+    </div>
+  </div>
+);
